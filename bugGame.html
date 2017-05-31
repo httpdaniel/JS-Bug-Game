@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="bug.js" type="text/javascript"></script>
+  <title>Clicky Bug Game</title>
+</head>
+
+<body>
+  <div id='scoreLabel' style='position:absolute; left:5px; top:5px; visibility:hidden;'>
+    Score:0 Time:10
+  </div>
+  <div id='gameOverPanel' style='position:absolute; left:100px; top:100px; width:500px; height:500px; border-style:solid;
+  text-align:center;'>
+    <p>
+      <h2>Game Over</h2></p>
+    <div id='finalScorePanel'></div>
+    <p>When the game starts, a little bug will flutter around the screen. See how many times you can click it in 20 seconds!
+    </p>
+    <p><input type='button' value='Start Game' onclick='startGame();'></p>
+  </div>
+  <div id='theBug' style='position:absolute; left:200px; top:200px; visibility:hidden;'>
+    <img id='bugImg' src='bug2_1.png' onclick='clickedBug();'>
+  </div>
+</body>
+
+</html>
